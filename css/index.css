@@ -4,7 +4,7 @@ body{
 
 /* headers */
 h1 {
-  padding-top: 150px;
+  padding-top: 75px;
   font-family: 'Montserrat', sans-serif;
   font-size: 4em;
   text-align: center;
@@ -20,6 +20,12 @@ h3 {
   font-size: 1.3em;
   text-align: center;
 }
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .3em;
+  text-align: center;
+}
+
 
 /* nav bar */
 .active{
@@ -42,7 +48,7 @@ li {
   font-family: 'Montserrat', sans-serif;
 }
 
-li a, .dropbtn {
+li a, .dropbtn .active{
   display: inline-block;
   color: white;
   text-align: center;
@@ -78,7 +84,7 @@ li.dropdown {
 
 .dropdown-content a:hover {
   background-color: #333;
-  color: lightblue;
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {
@@ -86,3 +92,23 @@ li.dropdown {
 }
 
 /* portfolio images */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+}
