@@ -1,19 +1,42 @@
-body{
-
+body {
+  width:2000px;
+  height: 50px;
 }
+
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+  border-radius: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
 
 /* headers */
 h1 {
-  padding-top: 75px;
+  top: 0;
+  padding: 0;
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 4em;
   text-align: center;
 }
 
 h2 {
+  margin-top: 100px;
+  margin-left: auto;
   font-family: 'Montserrat', sans-serif;
   font-size: 2.8em;
-  text-align: center;
+  text-align: left;
 }
 h3 {
   font-family: 'Montserrat', sans-serif;
@@ -26,21 +49,40 @@ h4 {
   text-align: center;
 }
 
+/* social */
+div.fixed{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 50px;
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+}
+.no-italics{
+  font-style: normal;
+}
 
 /* nav bar */
 .active{
-  background: lightgray;
-  color: black;
+  background: #666;
+  color: white;
+}
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 }
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  top: 0;
   position: fixed;
-  top:0;
   width: 100%;
   overflow: hidden;
-  background-color: #333;
+  background-color: lightgray;
 }
 
 li {
@@ -50,19 +92,20 @@ li {
 
 li a, .dropbtn .active{
   display: inline-block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: white;
-  color: black;
+  background-color: #333;
+  color: white;
 }
 
-li.dropdown {
+li.dropdown .active {
   display: inline-block;
+  color: white;
 }
 
 .dropdown-content {
@@ -78,7 +121,7 @@ li.dropdown {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   text-align: left;
 }
 
