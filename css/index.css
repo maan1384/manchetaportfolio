@@ -3,22 +3,35 @@ body {
   margin: auto;
 }
 
+
+.bg-image {
+  overflow: hidden;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  height: 75%;
+  background-position: center;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+
 .bg-text {
-  background-color: #eddbcd;
-  color: #000000;
+  background-color: rgba(0,0,0,0.2);
+  color: white;
   font-family: 'Montserrat', sans-serif;
-  border-radius: 3px solid #f1f1f1;
+  border-radius: 1px solid #f1f1f1;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
   z-index: -2;
-  width: 60%;
+  width: 55%;
   padding: 35px;
   text-align: center;
-  -webkit-box-shadow: 0 8px 6px -6px #999;
-  -moz-box-shadow: 0 8px 6px -6px #999;
-  box-shadow: 0 8px 6px -6px #999;
 }
 
 
@@ -154,7 +167,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #cdcdcd;
   float: left;
-  width: 180px;
+  width: 120px;
 }
 div.gallery:hover {
   border: 1px solid #c06014;
