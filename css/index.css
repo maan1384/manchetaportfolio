@@ -93,13 +93,13 @@ div.fixed{
 
 /* nav bar */
 .active{
-  background: #c06014;
-  color: white;
+  background: white;
+  color: rgb(174, 33, 172);
 }
 .navbar {
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
+    -webkit-box-shadow: 0 8px 6px -6px lightblue;
+    -moz-box-shadow: 0 8px 6px -6px lightblue;
+    box-shadow: 0 8px 6px -6px lightblue;
 }
 ul {
   list-style-type: none;
@@ -109,7 +109,7 @@ ul {
   position: fixed;
   width: 100%;
   overflow: hidden;
-  background-color: #eddbcd;
+  background-color: rgb(245, 205, 227);
 }
 
 li {
@@ -126,8 +126,8 @@ li a, .dropbtn .active{
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-  background-color: white;
-  color: #c06014;
+  background-color: rgb(174, 33, 172);
+  color: white;
 }
 
 li.dropdown .active {
@@ -138,7 +138,7 @@ li.dropdown .active {
 .dropdown-content {
   display: none;
   position: fixed;
-  background-color: #eddbcd;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -153,8 +153,8 @@ li.dropdown .active {
 }
 
 .dropdown-content a:hover {
-  background-color: white;
-  color: #c06014;
+  background-color: rgb(174, 33, 172);
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {
