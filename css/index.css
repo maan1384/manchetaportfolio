@@ -132,7 +132,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown .active {
   display: inline-block;
-  color: white;
+  color: rgb(174, 33, 172);
 }
 
 .dropdown-content {
