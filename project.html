@@ -28,11 +28,11 @@
 <!-- Navigation -->
 
 <div class="topnav">
-  <header class="grid-x grid-padding-y align-left">
-    <div class="large-3 medium-2 small-1 cell">
+  <header class="grid-x grid-padding-y">
+    <div class="large-3 medium-2 cell">
 
     </div>
-    <nav class="cell large-6 medium-8 small-10">
+    <nav class="cell large-6 medium-8 small-12">
       <ul class="menu navbar align-left">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -40,77 +40,48 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div class="large-3 medium-2 small-1 cell">
+    <div class="large-3 medium-2 cell">
 
     </div>
   </header>
 </div>
 
 
-<!-- Gallery Grid -->
+<!-- Portfolio Gallery Grid -->
+<div class="grid-container">
 <div class="grid-x grid-padding-y">
-      <div class="column large-4 medium-3 small-2">
-        <div class="">
-          <img src="" alt="">
-        </div>
-      </div>
-      <div class="column large-3 medium-3 small-4">
-        <div class="content">
-          <h3>Senior Project</h3>
-          <img src="img/marvin-frontv2.jpg" alt="" onclick="myFunction(this);">
-        </div>
-      </div>
-      <div class="column large-3 medium-3 small-4">
-        <div class="content">
-          <h3>Packaging & Branding</h3>
-          <img src="img/3dboxes.jpg" alt="stickers" onclick="myFunction(this);">
-        </div>
-      </div>
-      <div class="column large-2 medium-3 small-2">
-        <div class="">
-          <img src="" alt="">
-        </div>
-      </div>
+   <div class="large-3 medium-3 cell">
+
+   </div>
+   <div class="large-3 medium-3 small-6 cell">
+     <h5>Senior Project</h5>
+     <a href="#"><img class="g1"src="img/marvin-front.jpg" alt="Senior Project" title="Senior Project"></a>
+   </div>
+   <div class="large-3 medium-3 small-6 cell">
+        <h5>Logo Designs</h5>
+    <a href="#"><img class="g2"src="img/noms.jpg" alt="Logo Designs" title="Logo Designs"></a>
+   </div>
+   <div class="large-3 medium-3 cell">
+
+   </div>
 </div>
 
+<div class="grid-container gallery">
 <div class="grid-x grid-padding-y">
-      <div class="column large-4 medium-3 small-2">
-        <div class="">
-          <img src="" alt="">
-        </div>
-      </div>
-      <div class="column large-3 medium-3 small-4">
-        <div class="content">
-          <h3>Digital Artwork</h3>
-          <img src="img/ninja.jpg" alt="" onclick="myFunction(this);">
-        </div>
-      </div>
-      <div class="column large-3 medium-3 small-5">
-        <div class="content">
-          <h3>Logo Designs</h3>
-          <img src="img/crusader.jpg" alt="stickers" onclick="myFunction(this);">
-        </div>
-      </div>
-      <div class="column large-2 medium-3 small-1">
-        <div class="">
-          <img src="" alt="">
-        </div>
-      </div>
-</div>
+   <div class="large-3 medium-3 cell">
 
-<!-- Expanded Image -->
-<div class="container grid-x grid-padding-container large-4">
-  <!-- Close the image -->
-  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+   </div>
+   <div class="large-3 medium-3 small-6 cell">
+     <h5>Print</h5>
+     <a href="#"><img class="g3"src="img/MenuDesign.jpg" alt="Print" title="Print"></a>
+   </div>
+   <div class="large-3 medium-3 small-6 cell">
+        <h5>Packaging & Branding</h5>
+     <a href="#"><img class="g4"src="img/3dboxes.jpg" alt="Packging & Branding" title="Packaging & Branding"></a>
+   </div>
+   <div class="large-3 medium-3 cell">
 
-  <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%" alt="test">
-
-  <!-- Image text -->
-  <div id="imgtext"></div>
-</div>
-<div class="large-4">
-
+   </div>
 </div>
 
 
@@ -119,19 +90,5 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
-    <script>
-    function myFunction(imgs) {
-// Get the expanded image
-var expandImg = document.getElementById("expandedImg");
-// Get the image text
-var imgText = document.getElementById("imgtext");
-// Use the same src in the expanded image as the image being clicked on from the grid
-expandImg.src = imgs.src;
-// Use the value of the alt attribute of the clickable image as text inside the expanded image
-imgText.innerHTML = imgs.alt;
-// Show the container element (hidden with CSS)
-expandImg.parentElement.style.display = "block";
-}
-    </script>
   </body>
 </html>
