@@ -63,6 +63,8 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   font-size: .9em;
   text-align: center;
+  text-decoration: none;
+  color: black;
 }
 
 /* index */
@@ -178,14 +180,12 @@ li a:hover {
 
 .fa {
   padding: 20px;
-  margin: auto;
-  font-size: 30px;
+  margin: 0;
   width: 100px;
   text-align: center;
   text-decoration: none;
   display: flex;
   border-radius: 10px;
-  justify-content: center;
 }
 
 .fa:hover {
