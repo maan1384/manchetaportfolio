@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mancheta Designs</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="large-3 medium-3 small-1">
+
+        </div>
+        <div class="large-6 medium-6 small-10 cell">
+          <a href="index.html"><img class="logo2"src="img/title2.png" alt="mancheta designs"></a>
+        </div>
+        <div class="large-3 medium-3 small-1">
+
+        </div>
+      </div>
+    </div>
+
+<!-- Navigation -->
+
+<div class="topnav">
+  <header class="grid-x grid-padding-y">
+    <div class="large-3 medium-2 cell">
+
+    </div>
+    <nav class="cell large-6 medium-8 small-12">
+      <ul class="menu navbar align-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="project.html" class="active">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="large-3 medium-2 cell">
+
+    </div>
+  </header>
+</div>
+
+<!-- image gallery -->
+<div class="grid-x padding-x">
+<div class="large-3">
+
+</div>
+<div class="large-2">
+<h4>Digital Artwork</h4>
+<p>Compliation of Digital Artwork</p>
+</div>
+<div class="large-1">
+
+</div>
+
+<div class="large-3">
+  <img id="myImg" src="img/3dboxes.jpg" alt="'Crusader Quest' Packaging Boxes" style="width:100%;max-width:300px">
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img/3dboxes.jpg">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+</div>
+
+</div>
+<div class="grid-x grid-padding-x">
+  <div class="large-3">
+
+  </div>
+  <div class="large-3">
+    <a href="project.html">Back</a>
+
+  </div>
+  <div class="large-3">
+
+  </div>
+  <div class="large-3">
+
+  </div>
+</div>
+
+
+
+<!-- java for modal images -->
+<script type="text/javascript">
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img/3dboxes.jpg");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+modal.style.display = "block";
+modalImg.src = this.src;
+captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+</script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
