@@ -50,70 +50,90 @@
 <div class="large-3">
 
 </div>
-<div class="large-2">
+<div class="large-3">
 <h4>Senior Project</h4>
 <p>"Demon Princess from Another World" Anime Box Set</p>
+<a href="project.html">Back to Gallery</a>
+<br>
+<br>
+<br>
+<br>
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
 </div>
-<div class="large-1">
+</div>
+<!-- Slideshow container -->
+<div class="large-6 slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="img/seniorproject1.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/seniorproject2.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/seniorproject3.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/seniorproject4.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
 
 </div>
 
-<div class="large-3">
-  <img id="myImg" src="img/seniorproject.jpg" alt="'Demon Princess from Another World' Anime Box Set" style="width:100%;max-width:300px">
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-
-    <!-- The Close Button -->
-    <span class="close">&times;</span>
-
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img/seniorproject.jpg">
-
-    <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
-  </div>
-</div>
+<!-- Next and previous buttons -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
-<div class="grid-x grid-padding-x">
-  <div class="large-3">
-
-  </div>
-  <div class="large-3">
-    <a href="project.html">Back</a>
-
-  </div>
-  <div class="large-3">
-
-  </div>
-  <div class="large-3">
-
-  </div>
-</div>
+<br>
+<br>
 
 
 
-<!-- java for modal images -->
+<!-- java for slideshow -->
 <script type="text/javascript">
-// Get the modal
-var modal = document.getElementById("myModal");
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img/seniorproject.jpg");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-modal.style.display = "block";
-modalImg.src = this.src;
-captionText.innerHTML = this.alt;
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-modal.style.display = "none";
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
 </script>
     <script src="js/vendor/jquery.js"></script>
