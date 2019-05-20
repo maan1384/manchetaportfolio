@@ -169,7 +169,7 @@ h4 {
 
 /* image grid portolio*/
 .portolio{
-  padding: 25px;
+  padding: 20px;
 }
 .project {
   width: 250px;
@@ -214,6 +214,7 @@ h4 {
   position: sticky;
   padding-top: 15px;
   margin-left: 8px;
+
 }
 
 /* Hide the images by default */
@@ -302,4 +303,12 @@ h4 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* portolio nav */
+.text2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9em;
+  text-decoration: none;
+  padding-left: 10px;
 }
