@@ -328,9 +328,10 @@ h4 {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
+  color: black;
+  background-color: rgb(245, 205, 227);
   font-size: 15px;
-  padding: 8px 12px;
+  margin-top: 20px;
   position: absolute;
   bottom: 8px;
   width: 100%;
