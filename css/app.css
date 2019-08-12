@@ -5,6 +5,7 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 /* logo top */
 .logo {
   float: left;
@@ -32,31 +33,34 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .9em;
+  text-align: center;
+}
+
 
 /* aboutme*/
 .about{
-padding-top: 20px;
-width: 65%;
-padding-left: 200px;
-letter-spacing: 1px;
-min-width: 960px;
+  padding-top: 15px;
+  letter-spacing: 1px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 p {
-  padding-top: 15px;
   font-family: 'Montserrat', sans-serif;
-  font-size: .85em;
-  text-align: left;
-  position: sticky;
+  font-size: .9em;
+  text-align: justify;
 }
 
 .profile {
-    width: 200px;
-    height: auto;
-    display: block;
-    min-width: 250px;
-    float: left;
-    margin: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  width: 35%;
 }
 
 /* top navbar */
@@ -213,10 +217,78 @@ p {
   opacity: 0.5;
 }
 
+/* image links */
+
+.image-center{
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+  width: 50%;
+}
+
+.pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+.image-text {
+  text-align: center;
+  color: black;
+}
+
+.image-text a:hover {
+  color: lightgrey;
+  text-decoration: underline;
+}
+
+/* slideshows */
+
+.numbertext {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: magenta;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
 /* footer */
 #footer {
-    position: fixed;
+    position: relative;
     bottom: 0px;
     width: 100%;
     text-align: right;
