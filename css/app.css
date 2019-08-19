@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+/* landing logo */
+
+/* .landing {
+  display: block;
+  margin: auto;
+  width: auto;
+} */
+
+
 /* logo top */
 .logo {
   float: left;
