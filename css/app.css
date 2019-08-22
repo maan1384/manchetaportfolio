@@ -179,7 +179,7 @@ p {
   color: white;
   position: relative;
   background-color: white;
-  box-shadow: 2px 1px lightgray;
+  border: gray 1px solid;
 }
 
 .caption {
