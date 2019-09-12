@@ -49,6 +49,13 @@ h3 {
   text-align: center;
 }
 
+h4  {
+  padding-top: 10px;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .75em;
+  text-align: center;
+}
 
 /* aboutme*/
 .about{
