@@ -25,6 +25,12 @@
 
 /* index page image */
 
+#rcorner {
+  border-radius: 25px;
+  background-color: pink;
+  padding: 20px;
+  width: 200px;
+  height: 150px;}
 
 
 /* headers */
